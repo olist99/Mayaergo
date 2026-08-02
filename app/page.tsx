@@ -51,7 +51,7 @@ const faq = [
   {
     question: "Er det kun til børn?",
     answer:
-      "Nej. Jeg arbejder med børn, unge og voksne. Nogle kommer som forældre, der vil forstå og støtte deres barn bedre, andre kommer for at lære deres egen neurodivergens at kende, eller for at få redskaber mod angst.",
+      "Nej. Jeg arbejder med børn, unge og voksne. Nogle kommer som forældre, der vil forstå og støtte deres barn bedre, andre kommer for at lære deres egen neurodivergens at kende, eller for at få redskaber til at mestre angst.",
   },
   {
     question: "I har vist noget med dysfagi på arbejdspladser?",
@@ -124,7 +124,7 @@ export default function HomePage() {
             </h2>
             <p className="mt-4 text-[var(--color-ink-soft)]">
               Uanset om det handler om at forstå dit barns neurodivergens, din
-              egen, eller om at få redskaber mod angst, tager jeg altid
+              egen, eller om at få redskaber til at mestre angst, tager jeg altid
               udgangspunkt i lige præcis din situation.
             </p>
           </div>
