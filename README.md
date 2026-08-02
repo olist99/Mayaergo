@@ -21,7 +21,6 @@ Lige nu er en del ting placeholder, så siden ikke går ned:
 - Kopiér `.env.example` til `.env.local` og udfyld:
   - Koalendar-linket (`NEXT_PUBLIC_KOALENDAR_URL`), når der er en rigtig booking-side sat op
   - Resend-nøgle, så kontaktformularen faktisk sender en mail nogen steder hen (lige nu viser den bare en fejl, hvis man prøver uden, bedre end at lade som om det virkede)
-  - Stripe-nøgle til "betal online"-knapperne
   - Trustpilot-tingene, betyder først noget, når der er rigtige anmeldelser at vise
 
 - Domænet er placeholder overalt (layout, robots.txt, sitemap), `sikkerhavnergoterapi.dk`. Opdater, når det rigtige domæne er registreret.
@@ -31,7 +30,7 @@ Lige nu er en del ting placeholder, så siden ikke går ned:
 
 **Booking** går gennem Koalendar, det er bare et embed/popup, ikke noget avanceret. Sæt `NEXT_PUBLIC_KOALENDAR_URL`, så virker det.
 
-**Betaling** er Stripe Checkout, redirect-baseret, så der er ingen kortfelter, vi selv skal bygge eller sikre, det klarer Stripe. Priserne ligger ét sted, `lib/pricing.ts`, og ingen andre steder, så det, der vises på siden, og det, der rent faktisk trækkes, kan ikke komme til at afvige fra hinanden.
+**Betaling** foregår gennem Koalendar (samme sted som booking), så der er ingen separat Stripe Checkout-flow eller kortfelter, vi selv skal bygge eller sikre her på siden. Priserne, der vises på `/priser`, ligger ét sted, `lib/pricing.ts`, og er kun til visning — selve betalingen sker i Koalendars eget flow, hvis det er sat op der.
 
 **Kontaktformularen** poster til en lille API-route, som sender mailen videre via Resend. Er nøglen ikke sat, fejler den tydeligt i stedet for stille og roligt at lyve for den, der har udfyldt den.
 
