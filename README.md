@@ -17,7 +17,6 @@ Gå så bare ind på localhost:3000.
 Lige nu er en del ting placeholder, så siden ikke går ned:
 
 - `lib/business.ts` har det falske telefonnummer, CVR, adresse osv. Ret det dér, så opdaterer det sig alle steder (footer, privatlivspolitik, det Google-schema-agtige). Ikke noget med at lede efter det i fem forskellige filer, det er kun den ene.
-- Der er ikke noget rigtigt billede endnu, så About-siden har en grå boks med et personikon. Skift det ud i `app/about/page.tsx`, når der er et rigtigt portrætfoto.
 - Kopiér `.env.example` til `.env.local` og udfyld:
   - Koalendar-linket (`NEXT_PUBLIC_KOALENDAR_URL`), når der er en rigtig booking-side sat op
   - Resend-nøgle, så kontaktformularen faktisk sender en mail nogen steder hen (lige nu viser den bare en fejl, hvis man prøver uden, bedre end at lade som om det virkede)
