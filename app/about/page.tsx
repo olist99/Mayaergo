@@ -35,7 +35,7 @@ export default function AboutPage() {
                   alt={business.name}
                   fill
                   sizes="(min-width: 768px) 280px, 100vw"
-                  className="object-cover object-top"
+                  className="object-cover object-[center_30%]"
                   priority
                 />
               </div>
