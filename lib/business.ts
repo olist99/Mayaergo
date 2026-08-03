@@ -10,6 +10,7 @@ export const business = {
   postalCode: "4250",
   cvr: "12345678",
   autorisationsId: "0FF6F",
+  domain: "sikkerhavn.dk",
   openingHours: "Fredage 8 - 16, book via besked eller online",
   social: {
     facebook: "https://www.facebook.com/profile.php?id=61592191277489",

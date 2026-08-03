@@ -22,7 +22,7 @@ const karla = Karla({
   display: "swap",
 });
 
-const siteUrl = "https://sikkerhavnergoterapi.dk";
+const siteUrl = `https://${business.domain}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -22,8 +22,8 @@ Lige nu er en del ting placeholder, så siden ikke går ned:
   - Resend-nøgle, så kontaktformularen faktisk sender en mail nogen steder hen (lige nu viser den bare en fejl, hvis man prøver uden, bedre end at lade som om det virkede)
   - Trustpilot-tingene, betyder først noget, når der er rigtige anmeldelser at vise
 
-- Domænet er placeholder overalt (layout, robots.txt, sitemap), `sikkerhavnergoterapi.dk`. Opdater, når det rigtige domæne er registreret.
-- Resend's afsenderadresse er deres delte testadresse lige nu (`onboarding@resend.dev`), som kun virker, hvis man sender til sin egen mail. Når domænet er verificeret hos Resend, skal `from` i `app/api/contact/route.ts` ændres, ellers bliver mails til andre bare afvist.
+- Domænet ligger ét sted: `domain` i `lib/business.ts`, sat til det rigtige `sikkerhavn.dk`. Layout, robots.txt, sitemap og afsenderadressen i kontaktformularen bruger alle den samme værdi.
+- Afsenderadressen i `app/api/contact/route.ts` er `kontakt@${business.domain}`. Det virker, så snart domænet er verificeret i Resend (SPF/DKIM/MX-records tilføjet hos DNS-udbyderen, se integrationsafsnittet).
 
 ## Integrationerne, kort fortalt
 

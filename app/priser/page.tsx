@@ -47,22 +47,45 @@ export default function PricingPage() {
               </article>
             ))}
           </div>
-          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-1">
-          {sanseplans.map(({ id, title, duration, price, text, points }) => (
-              <article key={id} className="card flex flex-col p-7" style={{marginTop: '20px'}}>
-                <p className="text-sm font-medium text-[var(--color-sage-dark)]">{duration}</p>
-                <h2 className="mt-1 font-display text-xl font-semibold text-[var(--color-ink)]">{title}</h2>
-                <p className="mt-3 font-display text-3xl font-semibold text-[var(--color-ink)]">{price}</p>
-                <p className="mt-3 text-sm text-[var(--color-ink-soft)]">{text}</p>
-                <ul className="mt-5 space-y-2.5 border-t border-[var(--color-line)] pt-5">
-                  {points.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 text-sm text-[var(--color-ink)]">
-                      <Check weight="bold" className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sage-dark)]" aria-hidden="true" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <BookingButton className="btn btn-outline mt-5 w-full">Book denne pakke</BookingButton>
+          <div className="mt-6 space-y-6">
+            {sanseplans.map(({ id, title, duration, price, text, points }) => (
+              <article
+                key={id}
+                className="overflow-hidden rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-surface)] sm:grid sm:grid-cols-[200px_1fr]"
+              >
+                <div className="tint-panel flex items-center justify-center p-6 sm:p-8">
+                  <Image
+                    src="/illustrations/service-sensory.svg"
+                    alt=""
+                    width={160}
+                    height={160}
+                    className="h-28 w-auto sm:h-32"
+                  />
+                </div>
+                <div className="p-7 sm:p-8">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full bg-[var(--color-sage-light)] px-3 py-1 text-xs font-medium text-[var(--color-sage-dark)]">
+                      {duration}
+                    </span>
+                    <span className="text-xs font-medium uppercase tracking-wide text-[var(--color-ink-soft)]">
+                      Særlig udredning
+                    </span>
+                  </div>
+                  <h2 className="mt-3 font-display text-2xl font-semibold text-[var(--color-ink)]">{title}</h2>
+                  <p className="mt-3 max-w-2xl text-sm text-[var(--color-ink-soft)]">{text}</p>
+                  <ul className="mt-5 grid gap-2.5 sm:grid-cols-3">
+                    {points.map((point) => (
+                      <li key={point} className="flex items-start gap-2.5 text-sm text-[var(--color-ink)]">
+                        <Check weight="bold" className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sage-dark)]" aria-hidden="true" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-[var(--color-line)] pt-5">
+                    <p className="font-display text-2xl font-semibold text-[var(--color-ink)]">{price}</p>
+                    <BookingButton className="btn btn-primary">Book denne udredning</BookingButton>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
@@ -112,7 +135,7 @@ export default function PricingPage() {
             din tid.
           </div>
 
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div className="card p-6">
               <h2 className="font-display text-lg font-semibold text-[var(--color-ink)]">Betaling</h2>
               <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
@@ -130,6 +153,21 @@ export default function PricingPage() {
                 bliver nødt til at aflyse. Ved sent afbud eller
                 udeblivelse opkræver jeg et gebyr på 300 kr., da jeg
                 ellers ikke kan nå at give tiden videre til en anden.
+              </p>
+            </div>
+            <div className="card p-6">
+              <h2 className="font-display text-lg font-semibold text-[var(--color-ink)]">Kørsel</h2>
+              <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
+                Jeg tilbyder hjemmebesøg inden for ca. 45 minutters kørsel
+                fra Fuglebjerg. De første 15 km er inkluderet i prisen.
+                Ved kørsel ud over 15 km opkræves et kørselstillæg på 4
+                kr. pr. kilometer (beregnet fra Fuglebjerg til
+                besøgsadressen). Jeg kører som udgangspunkt ikke
+                længere end ca. 45 minutter fra Fuglebjerg. Har du
+                særlige behov, er du altid velkommen til at kontakte
+                mig, så ser vi sammen på mulighederne. Er du i tvivl om,
+                hvorvidt jeg dækker dit område, er du meget velkommen
+                til at kontakte mig for en uforpligtende vurdering.
               </p>
             </div>
           </div>

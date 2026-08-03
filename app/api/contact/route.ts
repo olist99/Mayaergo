@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: `${business.practiceName} <onboarding@resend.dev>`,
+      from: `${business.practiceName} <kontakt@${business.domain}>`,
       to: [toEmail],
       reply_to: email,
       subject: `Ny besked fra ${name} via kontaktformularen`,
