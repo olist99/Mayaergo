@@ -8,7 +8,7 @@ export const business = {
   address: "Fuglebjerglundvej 3",
   city: "Fuglebjerg",
   postalCode: "4250",
-  cvr: "12345678",
+  cvr: "46666062",
   autorisationsId: "0FF6F",
   domain: "sikkerhavn.dk",
   openingHours: "Fredage 8 - 16, book via besked eller online",
