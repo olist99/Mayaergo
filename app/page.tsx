@@ -68,7 +68,7 @@ const faq = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-x-hidden border-b border-[var(--color-line)] bg-[var(--color-surface)]">
+      <section className="relative border-b border-[var(--color-line)] bg-[var(--color-surface)]">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:px-10 md:py-24">
           <div>
             <p className="mb-4 text-sm font-medium uppercase tracking-wide text-[var(--color-sage-dark)]">
@@ -104,12 +104,12 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="relative hidden h-[36rem] w-full overflow-visible md:block md:ml-32">
+          <div className="relative hidden h-[40rem] w-full overflow-visible md:block md:ml-32">
             <svg
               viewBox="0 0 210 210"
               xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid meet"
-              className="absolute left-1/2 top-1/2 h-[46rem] w-[51rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
+              preserveAspectRatio="xMidYMid slice"
+              className="absolute left-1/2 top-1/2 h-[48rem] w-[44rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
@@ -120,7 +120,7 @@ export default function HomePage() {
               </defs>
               <path
                 fill="url(#heroBlobImage)"
-                d="M41.2,-56.4C55.6,-46.2,71.1,-37.2,80.2,-22.8C89.3,-8.5,92,11.1,83.8,24.4C75.6,37.7,56.6,44.7,40.8,52.9C25,61.2,12.5,70.6,-1,72C-14.6,73.5,-29.2,66.9,-43.3,58.1C-57.3,49.3,-70.7,38.3,-75.3,24.4C-80,10.5,-75.8,-6.4,-70.9,-23.5C-66,-40.7,-60.5,-58.2,-48.6,-69.2C-36.6,-80.2,-18.3,-84.8,-2.5,-81.4C13.4,-78,26.8,-66.7,41.2,-56.4Z"
+                d="M45.6,-67.9C56.5,-54.9,60.8,-38,63.3,-22.4C65.8,-6.8,66.6,7.5,65.2,24.1C63.9,40.8,60.5,59.6,49.2,66.7C38,73.7,19,68.9,0.9,67.6C-17.1,66.3,-34.2,68.5,-47.9,62.2C-61.6,56,-71.8,41.3,-77.6,24.9C-83.3,8.4,-84.7,-9.8,-80.4,-27.1C-76.1,-44.4,-66.2,-60.9,-51.8,-72.7C-37.5,-84.6,-18.7,-91.7,-0.7,-90.8C17.4,-89.9,34.8,-80.9,45.6,-67.9Z"
                 transform="translate(100 100)"
               />
             </svg>

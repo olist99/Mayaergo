@@ -80,7 +80,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
       </head>
-      <body className={`${fraunces.variable} ${karla.variable} antialiased`}>
+      <body className={`${fraunces.variable} ${karla.variable} overflow-x-hidden antialiased`}>
         <BookingModalProvider>
           <CookieConsentProvider>
             <a
