@@ -103,11 +103,12 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="w-full">
+          <div className="h-full w-full self-stretch">
             <svg
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-auto w-full"
+              preserveAspectRatio="xMidYMid slice"
+              className="h-full w-full"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
