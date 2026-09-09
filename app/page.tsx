@@ -103,12 +103,12 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="h-full w-full self-stretch">
+          <div className="relative h-full w-full self-stretch">
             <svg
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMidYMid slice"
-              className="h-full w-full"
+              className="absolute left-1/2 top-1/2 h-[155%] w-[155%] -translate-x-1/2 -translate-y-1/2"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
@@ -119,7 +119,7 @@ export default function HomePage() {
               </defs>
               <path
                 fill="url(#heroBlobImage)"
-                d="M39.8,-51.9C54.1,-44.5,69.8,-36.1,73.9,-23.9C78.1,-11.7,70.6,4.4,65.6,21.9C60.7,39.3,58.3,58.1,47.8,67.8C37.3,77.4,18.6,78,2.2,74.9C-14.2,71.8,-28.3,65.1,-38.7,55.4C-49.1,45.7,-55.7,33,-64,18.2C-72.3,3.5,-82.2,-13.2,-79.7,-27.5C-77.2,-41.7,-62.3,-53.4,-46.9,-60.4C-31.5,-67.5,-15.8,-69.9,-1.5,-67.9C12.8,-65.9,25.6,-59.3,39.8,-51.9Z"
+                d="M36.2,-48.6C44.9,-43.6,48.4,-30.2,52.8,-17.1C57.2,-3.9,62.5,9.1,59.8,20C57,30.9,46.2,39.8,34.9,47.1C23.6,54.3,11.8,59.9,-2.3,63.1C-16.4,66.2,-32.8,67,-35.3,56.9C-37.8,46.8,-26.4,25.8,-32.4,10C-38.3,-5.9,-61.5,-16.7,-67.6,-29.4C-73.7,-42.1,-62.7,-56.6,-48.6,-59.8C-34.5,-63,-17.2,-54.9,-1.7,-52.6C13.8,-50.2,27.6,-53.6,36.2,-48.6Z"
                 transform="translate(100 100)"
               />
             </svg>
