@@ -61,7 +61,7 @@ const faq = [
   {
     question: "Hvad hvis jeg bliver nødt til at aflyse?",
     answer:
-      "Så sig endelig til senest 24 timer før din tid. Ved sent afbud eller udeblivelse opkræver vi et gebyr på 300 kr.",
+      "Så sig endelig til senest 24 timer før din tid. Ved sent afbud eller udeblivelse opkræver vi fuldt behandlingsgebyr, minimum 300 kr.",
   },
 ];
 

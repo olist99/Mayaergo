@@ -145,7 +145,8 @@ export default function PricingPage() {
               <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
                 Sig endelig til senest 24 timer før din tid, hvis du
                 bliver nødt til at aflyse. Ved sent afbud eller
-                udeblivelse opkræver vi et gebyr på 300 kr., da vi
+                udeblivelse opkræver vi fuldt behandlingsgebyr, minimum
+                300 kr., da vi
                 ellers ikke kan nå at give tiden videre til en anden.
               </p>
             </div>
