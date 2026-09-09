@@ -68,7 +68,7 @@ const faq = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-surface)]">
+      <section className="relative overflow-x-hidden border-b border-[var(--color-line)] bg-[var(--color-surface)]">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:px-10 md:py-24">
           <div>
             <p className="mb-4 text-sm font-medium uppercase tracking-wide text-[var(--color-sage-dark)]">
@@ -104,12 +104,12 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="relative hidden h-[32rem] w-full overflow-visible md:block md:ml-32">
+          <div className="relative hidden h-[36rem] w-full overflow-visible md:block md:ml-32">
             <svg
               viewBox="0 0 210 210"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMidYMid meet"
-              className="absolute left-1/2 top-1/2 h-[36rem] w-[40rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
+              className="absolute left-1/2 top-1/2 h-[46rem] w-[51rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
