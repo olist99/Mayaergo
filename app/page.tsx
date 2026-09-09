@@ -109,7 +109,7 @@ export default function HomePage() {
               viewBox="0 0 210 210"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMidYMid slice"
-              className="absolute left-1/2 top-1/2 h-[155%] w-[155%] -translate-x-1/2 -translate-y-1/2"
+              className="absolute left-1/2 top-1/2 h-[190%] w-[190%] -translate-x-1/2 -translate-y-1/2"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
