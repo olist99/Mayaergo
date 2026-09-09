@@ -123,10 +123,10 @@ export default function HomePage() {
               </defs>
               <image
                 href="/images/hero-house.png"
-                x="0"
-                y="0"
-                width="210"
-                height="210"
+                x="-40"
+                y="-40"
+                width="290"
+                height="290"
                 preserveAspectRatio="xMidYMid slice"
                 clipPath="url(#heroBlobClip)"
               />
