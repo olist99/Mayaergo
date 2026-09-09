@@ -104,24 +104,31 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="relative hidden h-[40rem] w-full overflow-visible md:block md:ml-32">
+          <div className="relative hidden h-[46rem] w-full overflow-visible md:block md:ml-32">
             <svg
               viewBox="0 0 210 210"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMidYMid slice"
-              className="absolute left-1/2 top-1/2 h-[48rem] w-[44rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
+              className="absolute left-1/2 top-1/2 h-[58rem] w-[53rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
               <defs>
-                <pattern id="heroBlobImage" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 1 1">
-                  <image href="/images/hero-house.png" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
-                </pattern>
+                <clipPath id="heroBlobClip">
+                  <path
+                    d="M45.6,-67.9C56.5,-54.9,60.8,-38,63.3,-22.4C65.8,-6.8,66.6,7.5,65.2,24.1C63.9,40.8,60.5,59.6,49.2,66.7C38,73.7,19,68.9,0.9,67.6C-17.1,66.3,-34.2,68.5,-47.9,62.2C-61.6,56,-71.8,41.3,-77.6,24.9C-83.3,8.4,-84.7,-9.8,-80.4,-27.1C-76.1,-44.4,-66.2,-60.9,-51.8,-72.7C-37.5,-84.6,-18.7,-91.7,-0.7,-90.8C17.4,-89.9,34.8,-80.9,45.6,-67.9Z"
+                    transform="translate(100 100)"
+                  />
+                </clipPath>
               </defs>
-              <path
-                fill="url(#heroBlobImage)"
-                d="M45.6,-67.9C56.5,-54.9,60.8,-38,63.3,-22.4C65.8,-6.8,66.6,7.5,65.2,24.1C63.9,40.8,60.5,59.6,49.2,66.7C38,73.7,19,68.9,0.9,67.6C-17.1,66.3,-34.2,68.5,-47.9,62.2C-61.6,56,-71.8,41.3,-77.6,24.9C-83.3,8.4,-84.7,-9.8,-80.4,-27.1C-76.1,-44.4,-66.2,-60.9,-51.8,-72.7C-37.5,-84.6,-18.7,-91.7,-0.7,-90.8C17.4,-89.9,34.8,-80.9,45.6,-67.9Z"
-                transform="translate(100 100)"
+              <image
+                href="/images/hero-house.png"
+                x="0"
+                y="0"
+                width="210"
+                height="210"
+                preserveAspectRatio="xMidYMid slice"
+                clipPath="url(#heroBlobClip)"
               />
             </svg>
           </div>
