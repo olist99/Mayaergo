@@ -78,7 +78,7 @@ export default function HomePage() {
               En sikker havn for dig og din familie
             </h1>
             <p className="mt-6 max-w-md text-lg text-[var(--color-ink-soft)]">
-              Vi er ergoterapeut med en masse gode redskaber i kufferten.
+              Vi er ergoterapeuter med en masse gode redskaber i kufferten.
               Sammen med min assistent Selina hjælper vi børn, unge og
               voksne med ADHD/ADD og autisme, sanseforstyrrelser og
               belastningsreaktioner (depression, angst, stress), med fokus
