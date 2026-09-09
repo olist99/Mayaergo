@@ -79,7 +79,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 max-w-md text-lg text-[var(--color-ink-soft)]">
               Jeg er ergoterapeut med en masse gode redskaber i kufferten.
-              Sammen med min assistent Selina hjælper jeg børn, unge og
+              Sammen med min assistent Selina hjælper vi børn, unge og
               voksne med neurodivergens, sanseforstyrrelser og
               belastningsreaktioner, med fokus på psykoedukation og mestring,
               virtuelt eller i dit eget hjem.
@@ -103,9 +103,9 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="relative h-full w-full self-stretch">
+          <div className="relative h-full w-full self-stretch md:ml-32">
             <svg
-              viewBox="0 0 200 200"
+              viewBox="0 0 210 210"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMidYMid slice"
               className="absolute left-1/2 top-1/2 h-[155%] w-[155%] -translate-x-1/2 -translate-y-1/2"

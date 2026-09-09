@@ -66,7 +66,7 @@ export default function AboutToggle({ mayaName, assistantName, autorisationsId }
               <p>
                 Jeg hedder {mayaName}, og jeg er ergoterapeut med en masse
                 gode redskaber i kufferten. Sammen med min assistent{" "}
-                {assistantName} hjælper jeg børn, unge og voksne med
+                {assistantName} hjælper vi børn, unge og voksne med
                 neurodivergens, sanseforstyrrelser og belastningsreaktioner.
               </p>
               <p>
