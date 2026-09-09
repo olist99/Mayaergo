@@ -1,14 +1,26 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import BookingButton from "@/components/BookingButton";
-import { plans, sanseplans, packagePlan } from "@/lib/pricing";
+import { freeIntro, sessions, packages, assessments, type Service } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Priser - Sikker Havn Ergoterapi",
-  description: "Priser på psykoedukation, mestringsforløb og sanseterapi hos Sikker Havn Ergoterapi.",
+  description: "Priser på psykoedukation, mestringsforløb, sanseterapi og udredninger hos Sikker Havn Ergoterapi.",
 };
+
+function ServiceCard({ service }: { service: Service }) {
+  return (
+    <article className="card flex flex-col p-7">
+      <p className="text-sm font-medium text-[var(--color-sage-dark)]">{service.duration}</p>
+      <h3 className="mt-1 font-display text-xl font-semibold text-[var(--color-ink)]">{service.title}</h3>
+      <p className="mt-3 font-display text-3xl font-semibold text-[var(--color-ink)]">{service.price}</p>
+      <p className="mt-3 text-sm text-[var(--color-ink-soft)]">{service.text}</p>
+      <BookingButton className="btn btn-outline mt-5 w-full">Book denne ydelse</BookingButton>
+    </article>
+  );
+}
 
 export default function PricingPage() {
   return (
@@ -28,76 +40,58 @@ export default function PricingPage() {
 
       <section className="border-b border-[var(--color-line)] bg-[var(--color-bg)]">
         <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {plans.map(({ id, title, duration, price, text, points }) => (
-              <article key={id} className="card flex flex-col p-7">
-                <p className="text-sm font-medium text-[var(--color-sage-dark)]">{duration}</p>
-                <h2 className="mt-1 font-display text-xl font-semibold text-[var(--color-ink)]">{title}</h2>
-                <p className="mt-3 font-display text-3xl font-semibold text-[var(--color-ink)]">{price}</p>
-                <p className="mt-3 text-sm text-[var(--color-ink-soft)]">{text}</p>
-                <ul className="mt-5 space-y-2.5 border-t border-[var(--color-line)] pt-5">
-                  {points.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 text-sm text-[var(--color-ink)]">
-                      <Check weight="bold" className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sage-dark)]" aria-hidden="true" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <BookingButton className="btn btn-outline mt-5 w-full">Book denne pakke</BookingButton>
-              </article>
-            ))}
-          </div>
-          <div className="mt-6 space-y-6">
-            {sanseplans.map(({ id, title, duration, price, text, points }) => (
-              <article
-                key={id}
-                className="overflow-hidden rounded-[var(--radius)] border border-[var(--color-line)] bg-[var(--color-surface)] sm:grid sm:grid-cols-[200px_1fr]"
-              >
-                <div className="tint-panel flex items-center justify-center p-6 sm:p-8">
-                  <Image
-                    src="/illustrations/service-sensory.svg"
-                    alt=""
-                    width={160}
-                    height={160}
-                    className="h-28 w-auto sm:h-32"
-                  />
-                </div>
-                <div className="p-7 sm:p-8">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="rounded-full bg-[var(--color-sage-light)] px-3 py-1 text-xs font-medium text-[var(--color-sage-dark)]">
-                      {duration}
-                    </span>
-                    <span className="text-xs font-medium uppercase tracking-wide text-[var(--color-ink-soft)]">
-                      Særlig udredning
-                    </span>
-                  </div>
-                  <h2 className="mt-3 font-display text-2xl font-semibold text-[var(--color-ink)]">{title}</h2>
-                  <p className="mt-3 max-w-2xl text-sm text-[var(--color-ink-soft)]">{text}</p>
-                  <ul className="mt-5 grid gap-2.5 sm:grid-cols-3">
-                    {points.map((point) => (
-                      <li key={point} className="flex items-start gap-2.5 text-sm text-[var(--color-ink)]">
-                        <Check weight="bold" className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sage-dark)]" aria-hidden="true" />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-[var(--color-line)] pt-5">
-                    <p className="font-display text-2xl font-semibold text-[var(--color-ink)]">{price}</p>
-                    <BookingButton className="btn btn-primary">Book denne udredning</BookingButton>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-          <div className="card mt-6 flex flex-col items-start gap-4 p-7 sm:flex-row sm:items-center sm:justify-between">
+          <div className="tint-panel flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <h2 className="font-display text-xl font-semibold text-[var(--color-ink)]">{packagePlan.title}</h2>
-              <p className="mt-2 max-w-xl text-sm text-[var(--color-ink-soft)]">{packagePlan.text}</p>
+              <p className="text-sm font-medium text-[var(--color-sage-dark)]">{freeIntro.duration}</p>
+              <h2 className="mt-1 font-display text-xl font-semibold text-[var(--color-ink)]">{freeIntro.title}</h2>
+              <p className="mt-2 max-w-lg text-sm text-[var(--color-ink-soft)]">{freeIntro.text}</p>
             </div>
             <div className="flex flex-col items-start gap-3 sm:items-end sm:shrink-0">
-              <p className="font-display text-2xl font-semibold text-[var(--color-ink)]">{packagePlan.price}</p>
-              <BookingButton className="btn btn-primary">Book dette forløb</BookingButton>
+              <p className="font-display text-2xl font-semibold text-[var(--color-ink)]">{freeIntro.price}</p>
+              <BookingButton className="btn btn-primary">Book gratis samtale</BookingButton>
             </div>
+          </div>
+
+          <h2 className="mt-16 font-display text-2xl font-semibold text-[var(--color-ink)]">Enkelte sessioner</h2>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {sessions.map((service) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[var(--color-line)] bg-[var(--color-surface)]">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
+          <h2 className="font-display text-2xl font-semibold text-[var(--color-ink)]">Forløbspakker</h2>
+          <p className="mt-2 max-w-2xl text-[var(--color-ink-soft)]">
+            Betal for et helt forløb på én gang, så er sessionerne booket af vejen.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            {packages.map((service) => (
+              <div key={service.id} className="card flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-sm font-medium text-[var(--color-sage-dark)]">{service.duration}</p>
+                  <h3 className="mt-1 font-display text-xl font-semibold text-[var(--color-ink)]">{service.title}</h3>
+                  <p className="mt-2 max-w-sm text-sm text-[var(--color-ink-soft)]">{service.text}</p>
+                </div>
+                <div className="flex flex-col items-start gap-3 sm:items-end sm:shrink-0">
+                  <p className="font-display text-2xl font-semibold text-[var(--color-ink)]">{service.price}</p>
+                  <BookingButton className="btn btn-primary">Book dette forløb</BookingButton>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[var(--color-line)] bg-[var(--color-bg)]">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
+          <h2 className="font-display text-2xl font-semibold text-[var(--color-ink)]">Udredning &amp; træning</h2>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {assessments.map((service) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
           </div>
         </div>
       </section>
@@ -117,7 +111,7 @@ export default function PricingPage() {
                 opgavens omfang, så skriv til mig for et tilbud.
               </p>
             </div>
-            <Link href="/contact" className="btn btn-primary sm:shrink-0">
+            <Link href="/kontakt" className="btn btn-primary sm:shrink-0">
               Skriv til mig
               <ArrowRight weight="bold" className="h-4 w-4" aria-hidden="true" />
             </Link>
@@ -161,13 +155,7 @@ export default function PricingPage() {
                 Jeg tilbyder hjemmebesøg inden for ca. 45 minutters kørsel
                 fra Fuglebjerg. De første 15 km er inkluderet i prisen.
                 Ved kørsel ud over 15 km opkræves et kørselstillæg på 4
-                kr. pr. kilometer (beregnet fra Fuglebjerg til
-                besøgsadressen). Jeg kører som udgangspunkt ikke
-                længere end ca. 45 minutter fra Fuglebjerg. Har du
-                særlige behov, er du altid velkommen til at kontakte
-                mig, så ser vi sammen på mulighederne. Er du i tvivl om,
-                hvorvidt jeg dækker dit område, er du meget velkommen
-                til at kontakte mig for en uforpligtende vurdering.
+                kr. pr. kilometer.
               </p>
             </div>
           </div>

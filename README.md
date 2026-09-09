@@ -18,8 +18,8 @@ Lige nu er en del ting placeholder, så siden ikke går ned:
 
 - `lib/business.ts` har det falske telefonnummer, CVR, adresse osv. Ret det dér, så opdaterer det sig alle steder (footer, privatlivspolitik, det Google-schema-agtige). Ikke noget med at lede efter det i fem forskellige filer, det er kun den ene.
 - Kopiér `.env.example` til `.env.local` og udfyld:
-  - Koalendar-linket (`NEXT_PUBLIC_KOALENDAR_URL`), når der er en rigtig booking-side sat op
   - Resend-nøgle, så kontaktformularen faktisk sender en mail nogen steder hen (lige nu viser den bare en fejl, hvis man prøver uden, bedre end at lade som om det virkede)
+  - Booking-linket (`NEXT_PUBLIC_BOOKING_URL`), hvis EasyPractice-siden nogensinde flytter
   - Trustpilot-tingene, betyder først noget, når der er rigtige anmeldelser at vise
 
 - Domænet ligger ét sted: `domain` i `lib/business.ts`, sat til det rigtige `sikkerhavn.dk`. Layout, robots.txt, sitemap og afsenderadressen i kontaktformularen bruger alle den samme værdi.
@@ -27,15 +27,15 @@ Lige nu er en del ting placeholder, så siden ikke går ned:
 
 ## Integrationerne, kort fortalt
 
-**Booking** går gennem Koalendar, det er bare et embed/popup, ikke noget avanceret. Sæt `NEXT_PUBLIC_KOALENDAR_URL`, så virker det.
+**Booking** går gennem EasyPractice, det er bare et embed på kontaktsiden plus en knap, der åbner bookingsiden i en ny fane, ikke noget avanceret. Sæt `NEXT_PUBLIC_BOOKING_URL`, hvis linket skal ændres.
 
-**Betaling** foregår gennem Koalendar (samme sted som booking), så der er ingen separat Stripe Checkout-flow eller kortfelter, vi selv skal bygge eller sikre her på siden. Priserne, der vises på `/priser`, ligger ét sted, `lib/pricing.ts`, og er kun til visning — selve betalingen sker i Koalendars eget flow, hvis det er sat op der.
+**Betaling** foregår gennem EasyPractice (samme sted som booking), så der er ingen separat Stripe Checkout-flow eller kortfelter, vi selv skal bygge eller sikre her på siden. Priserne, der vises på `/priser` og `/ydelser`, ligger ét sted, `lib/pricing.ts`, og er kun til visning — selve betalingen sker i EasyPractice's eget flow.
 
 **Kontaktformularen** poster til en lille API-route, som sender mailen videre via Resend. Er nøglen ikke sat, fejler den tydeligt i stedet for stille og roligt at lyve for den, der har udfyldt den.
 
 **Trustpilot** er delt op i to ting med vilje: et almindeligt link til anmeldelserne (virker med det samme, ingen cookie-godkendelse nødvendig for et link) og selve widgetten (venter på cookie-samtykke, da det er et tracking-script). De to kan slås til hver for sig.
 
-**Cookies**: der er en banner, Koalendars cookies tæller som nødvendige, siden booking jo er hele pointen med siden, Trustpilots widget venter på samtykke.
+**Cookies**: der er en banner, EasyPractice's cookies tæller som nødvendige, siden booking jo er hele pointen med siden, Trustpilots widget venter på samtykke.
 
 ## Designting værd at vide
 

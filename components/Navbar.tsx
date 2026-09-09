@@ -9,10 +9,10 @@ import BookingButton from "@/components/BookingButton";
 
 const links = [
   { href: "/", label: "Hjem" },
-  { href: "/services", label: "Ydelser" },
+  { href: "/ydelser", label: "Ydelser" },
   { href: "/priser", label: "Priser" },
-  { href: "/about", label: "Om mig" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/om-os", label: "Om os" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export default function Navbar() {

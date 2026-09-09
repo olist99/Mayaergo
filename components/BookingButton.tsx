@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { KOALENDAR_URL } from "@/lib/koalendar";
+import { useBookingModal } from "@/components/BookingModalProvider";
 
 type BookingButtonProps = {
   children: ReactNode;
@@ -10,11 +10,13 @@ type BookingButtonProps = {
 };
 
 export default function BookingButton({ children, className, onClick }: BookingButtonProps) {
+  const { openModal } = useBookingModal();
+
   return (
     <button
       type="button"
       onClick={() => {
-        window.Koalendar?.("open", { url: KOALENDAR_URL });
+        openModal();
         onClick?.();
       }}
       className={className}

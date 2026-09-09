@@ -46,10 +46,10 @@ export default function Footer() {
         <div>
           <p className="text-sm font-semibold text-[var(--color-ink)]">Genveje</p>
           <ul className="mt-3 space-y-2 text-sm text-[var(--color-ink-soft)]">
-            <li><Link className="hover:text-[var(--color-sage-dark)]" href="/services">Ydelser</Link></li>
+            <li><Link className="hover:text-[var(--color-sage-dark)]" href="/ydelser">Ydelser</Link></li>
             <li><Link className="hover:text-[var(--color-sage-dark)]" href="/priser">Priser</Link></li>
-            <li><Link className="hover:text-[var(--color-sage-dark)]" href="/about">Om mig</Link></li>
-            <li><Link className="hover:text-[var(--color-sage-dark)]" href="/contact">Kontakt</Link></li>
+            <li><Link className="hover:text-[var(--color-sage-dark)]" href="/om-os">Om os</Link></li>
+            <li><Link className="hover:text-[var(--color-sage-dark)]" href="/kontakt">Kontakt</Link></li>
             <li><Link className="hover:text-[var(--color-sage-dark)]" href="/privatlivspolitik">Privatlivspolitik</Link></li>
           </ul>
         </div>

@@ -3,9 +3,9 @@ import { Fraunces, Karla } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import KoalendarProvider from "@/components/KoalendarProvider";
 import { CookieConsentProvider } from "@/components/CookieConsentProvider";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
+import { BookingModalProvider } from "@/components/BookingModalProvider";
 import { business } from "@/lib/business";
 
 const fraunces = Fraunces({
@@ -81,19 +81,20 @@ export default function RootLayout({
         />
       </head>
       <body className={`${fraunces.variable} ${karla.variable} antialiased`}>
-        <CookieConsentProvider>
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[var(--color-sage-dark)] focus:px-4 focus:py-2 focus:text-white"
-          >
-            Spring til indhold
-          </a>
-          <Navbar />
-          <main id="main-content">{children}</main>
-          <Footer />
-          <KoalendarProvider />
-          <CookieConsentBanner />
-        </CookieConsentProvider>
+        <BookingModalProvider>
+          <CookieConsentProvider>
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[var(--color-sage-dark)] focus:px-4 focus:py-2 focus:text-white"
+            >
+              Spring til indhold
+            </a>
+            <Navbar />
+            <main id="main-content">{children}</main>
+            <Footer />
+            <CookieConsentBanner />
+          </CookieConsentProvider>
+        </BookingModalProvider>
       </body>
     </html>
   );

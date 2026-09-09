@@ -89,7 +89,7 @@ export default function HomePage() {
                 Book en konsultation
                 <ArrowRight weight="bold" className="h-4 w-4" aria-hidden="true" />
               </BookingButton>
-              <Link href="/services" className="btn btn-outline btn-lg">
+              <Link href="/ydelser" className="btn btn-outline btn-lg">
                 Se ydelser
               </Link>
             </div>
@@ -103,15 +103,25 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="mx-auto w-full max-w-md">
-            <Image
-              src="/illustrations/hero-at-home.svg"
-              alt="Illustration af en person, der har det godt og trygt"
-              width={400}
-              height={400}
+          <div className="w-full">
+            <svg
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
               className="h-auto w-full"
-              priority
-            />
+              role="img"
+              aria-label="Foto af klinikkens hus i Fuglebjerg"
+            >
+              <defs>
+                <pattern id="heroBlobImage" patternUnits="objectBoundingBox" width="1" height="1" viewBox="0 0 1 1">
+                  <image href="/images/hero-house.png" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+                </pattern>
+              </defs>
+              <path
+                fill="url(#heroBlobImage)"
+                d="M39.8,-51.9C54.1,-44.5,69.8,-36.1,73.9,-23.9C78.1,-11.7,70.6,4.4,65.6,21.9C60.7,39.3,58.3,58.1,47.8,67.8C37.3,77.4,18.6,78,2.2,74.9C-14.2,71.8,-28.3,65.1,-38.7,55.4C-49.1,45.7,-55.7,33,-64,18.2C-72.3,3.5,-82.2,-13.2,-79.7,-27.5C-77.2,-41.7,-62.3,-53.4,-46.9,-60.4C-31.5,-67.5,-15.8,-69.9,-1.5,-67.9C12.8,-65.9,25.6,-59.3,39.8,-51.9Z"
+                transform="translate(100 100)"
+              />
+            </svg>
           </div>
         </div>
       </section>
@@ -174,7 +184,7 @@ export default function HomePage() {
 
           <div className="mt-10 text-center">
             <Link
-              href="/services"
+              href="/ydelser"
               className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-sage-dark)] hover:underline"
             >
               Se alle ydelser

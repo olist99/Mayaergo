@@ -33,7 +33,7 @@ export default function PrivacyPage() {
             <li>
               Når du booker en tid: navn, email og de øvrige oplysninger, du selv angiver i
               bookingprocessen. Booking (og eventuel onlinebetaling for tiden) håndteres af
-              Koalendar, som i denne sammenhæng er databehandler.
+              EasyPractice, som i denne sammenhæng er databehandler.
             </li>
             <li>
               Når du skriver til os via kontaktformularen: navn, email og indholdet af din besked. Beskeden
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
           <h2 className="font-display text-xl font-semibold text-[var(--color-ink)]">Cookies</h2>
           <p className="mt-3">Denne hjemmeside anvender:</p>
           <ul className="mt-3 list-disc space-y-2 pl-5">
-            <li><strong>Koalendar</strong>, nødvendig for at bookingkalenderen kan fungere.</li>
+            <li><strong>EasyPractice</strong>, nødvendig for at bookingkalenderen kan fungere.</li>
             <li><strong>Trustpilot</strong>, valgfri, viser anmeldelser og indlæses kun, hvis du accepterer det i cookiebeskeden.</li>
             <li><strong>Google Fonts</strong>, indlæser skrifttyper fra Google til visning af siden.</li>
           </ul>

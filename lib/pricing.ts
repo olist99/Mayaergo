@@ -1,40 +1,53 @@
-export type Plan = {
+export type Service = {
   id: string;
   title: string;
   duration: string;
   price: string;
-  amount: number;
+  amount: number; // øre. Vises kun, betaling foregår gennem EasyPractice, ikke på siden her.
   text: string;
-  points: string[];
-};
-export type SanseTest = {
-  id: string;
-  title: string;
-  duration: string;
-  price: string;
-  amount: number;
-  text: string;
-  points: string[];
 };
 
-export const plans: Plan[] = [
+export const freeIntro: Service = {
+  id: "telefonisk-afklaring",
+  title: "Telefonisk afklaringssamtale",
+  duration: "20 min",
+  price: "Gratis",
+  amount: 0,
+  text: "En uforpligtende samtale, hvor vi afklarer din eller dit barns situation, og om det giver mening at gå videre.",
+};
+
+export const sessions: Service[] = [
   {
-    id: "indledende",
-    title: "Indledende samtale",
-    duration: "60 min",
-    price: "800 kr.",
-    amount: 80000,
-    text: "Vi afklarer din eller dit barns situation, og hvilket forløb der giver mest mening at gå videre med.",
-    points: ["Afklaring af behov og forventninger", "Anbefaling til videre forløb", "Virtuelt eller i dit hjem"],
+    id: "foerste-behandling",
+    title: "Første behandling",
+    duration: "45 min",
+    price: "299 kr.",
+    amount: 29900,
+    text: "Den første egentlige behandling, hvor vi sammen lægger en plan for det videre forløb.",
   },
   {
-    id: "psykoedukation",
-    title: "Psykoedukation & mestringssession",
-    duration: "60 min",
-    price: "650 kr.",
-    amount: 65000,
-    text: "Løbende sessioner med psykoedukation og konkrete redskaber, til dig selv eller som forælder til et neurodivergent barn.",
-    points: ["Tilpasset dagens behov", "Redskaber til hverdagen", "Kan foregå virtuelt eller i hjemmet"],
+    id: "tryk-behandling",
+    title: "Tryk behandling for angst, stress, uro og kropslige spændinger",
+    duration: "45 min",
+    price: "550 kr.",
+    amount: 55000,
+    text: "Kropsligt fokuseret behandling, der hjælper med at regulere angst, stress, uro og spændinger.",
+  },
+  {
+    id: "mestring-autisme-adhd-1x",
+    title: "Mestringsforløb autisme/adhd, 1x",
+    duration: "45 min",
+    price: "750 kr.",
+    amount: 75000,
+    text: "Enkeltstående session med psykoedukation og redskaber til autisme eller adhd, til dig selv eller som forælder.",
+  },
+  {
+    id: "mestring-angst-1x",
+    title: "Mestringsforløb angst, 1x",
+    duration: "1 time",
+    price: "750 kr.",
+    amount: 75000,
+    text: "Enkeltstående session med redskaber til at mestre din angst, ud fra evidensbaserede metoder.",
   },
   {
     id: "sanseterapi",
@@ -43,27 +56,53 @@ export const plans: Plan[] = [
     price: "600 kr.",
     amount: 60000,
     text: "Individuel session med fokus på at forstå og regulere sanseforstyrrelser.",
-    points: ["Sansescreening", "Konkrete reguleringsstrategier", "Til børn, unge og voksne"],
   },
 ];
-export const sanseplans: SanseTest[] = [
+
+export const packages: Service[] = [
   {
-    id: "sensorisktest",
-    title: "Sensorisk udredning",
-    duration: "120 min",
-    price: "1.200 kr.",
-    amount: 120000,
-    text: "En sensorisk test udføres for at kortlægge en persons sensoriske problemområder og hvad de reagerer på. Denne kan bruges til bedre at forstå hvorfor en person reagerer som de gør og hvad de har af behov, i en given situation. Dette er et godt redskab forud for sanse træning eller til brug i institutioner",
-    points: ["Sansescreening", "Institution", "Til børn, unge og voksne"],
+    id: "mestring-autisme-adhd-pakke",
+    title: "Mestringsforløb autisme/adhd, pakke 8 sessioner",
+    duration: "45 min pr. session",
+    price: "5.000 kr.",
+    amount: 500000,
+    text: "8 sessioner betalt samlet, til dig der gerne vil have et sammenhængende forløb med fast opfølgning.",
+  },
+  {
+    id: "angst-mestring-halvt-forloeb",
+    title: "Angst mestring, halvt forløb (7x)",
+    duration: "1 time pr. session",
+    price: "4.500 kr.",
+    amount: 450000,
+    text: "7 sessioner betalt samlet, med redskaber til at mestre din angst løbende.",
   },
 ];
 
-export const packagePlan = {
-  id: "mestringsforloeb",
-  title: "Mestringsforløb, 6 gange",
-  price: "3.500 kr.",
-  amount: 350000,
-  text: "Seks sessioner betalt samlet: 3.500 kr. i stedet for 3.900 kr., til dig der gerne vil have et sammenhængende forløb med fast opfølgning.",
-};
+export const assessments: Service[] = [
+  {
+    id: "sensorisk-udredning",
+    title: "Sensorisk udredning",
+    duration: "1 time og 30 min",
+    price: "4.500 kr.",
+    amount: 450000,
+    text: "En sensorisk test, der kortlægger sensoriske problemområder og reaktionsmønstre. Et godt redskab forud for sansetræning eller til brug i institutioner.",
+  },
+  {
+    id: "dysfagi-udredning",
+    title: "Dysfagi/synkebesvær udredning",
+    duration: "1 time og 30 min",
+    price: "3.000 kr.",
+    amount: 300000,
+    text: "Udredning af synkebesvær, som grundlag for den videre træning.",
+  },
+  {
+    id: "dysfagi-traening",
+    title: "Dysfagi/synkebesvær træning",
+    duration: "45 min",
+    price: "650 kr.",
+    amount: 65000,
+    text: "Opfølgende træningssession ved dysfagi/synkebesvær.",
+  },
+];
 
-export const allPlans = [...plans, packagePlan];
+export const allPlans: Service[] = [...sessions, ...packages, ...assessments];

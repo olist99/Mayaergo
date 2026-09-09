@@ -4,7 +4,7 @@ import { business } from "@/lib/business";
 const siteUrl = `https://${business.domain}`;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/services", "/priser", "/about", "/contact", "/privatlivspolitik"];
+  const routes = ["", "/ydelser", "/priser", "/om-os", "/kontakt", "/privatlivspolitik"];
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,
