@@ -104,12 +104,12 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="relative hidden h-[28rem] w-full md:block md:ml-32">
+          <div className="relative hidden h-[32rem] w-full overflow-visible md:block md:ml-32">
             <svg
               viewBox="0 0 210 210"
               xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              className="absolute left-1/2 top-1/2 h-[36rem] w-[58rem] -translate-x-1/2 -translate-y-1/2"
+              preserveAspectRatio="xMidYMid meet"
+              className="absolute left-1/2 top-1/2 h-[36rem] w-[40rem] overflow-visible -translate-x-1/2 -translate-y-1/2"
               role="img"
               aria-label="Foto af klinikkens hus i Fuglebjerg"
             >
