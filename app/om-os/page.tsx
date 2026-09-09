@@ -4,7 +4,7 @@ import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Om os - Sikker Havn Ergoterapi",
-  description: "Ergoterapeut med egen erfaring med autisme, angst og belastningsreaktioner.",
+  description: "Ergoterapeut med egen erfaring med autisme, angst og belastningsreaktioner (depression, angst, stress).",
 };
 
 export default function AboutPage() {

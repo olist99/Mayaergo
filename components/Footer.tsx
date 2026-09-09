@@ -18,8 +18,9 @@ export default function Footer() {
             className="h-8 w-auto"
           />
           <p className="mt-3 max-w-xs text-sm text-[var(--color-ink-soft)]">
-            Ergoterapeutisk hjælp til børn, unge og voksne med neurodivergens,
-            sanseforstyrrelser og belastningsreaktioner.
+            Ergoterapeutisk hjælp til børn, unge og voksne med ADHD/ADD og
+            autisme, sanseforstyrrelser og belastningsreaktioner
+            (depression, angst, stress).
           </p>
           <div className="mt-4 flex gap-4">
             <a

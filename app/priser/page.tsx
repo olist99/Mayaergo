@@ -107,12 +107,12 @@ export default function PricingPage() {
               <p className="mt-2 max-w-xl text-sm text-[var(--color-ink-soft)]">
                 Udredning, træning og undervisning i dysfagi (synkebesvær)
                 til arbejdspladser på Sjælland og Lolland. Det er noget af
-                det, jeg elsker allermest at lave. Prisen afhænger af
-                opgavens omfang, så skriv til mig for et tilbud.
+                det, vi elsker allermest at lave. Prisen afhænger af
+                opgavens omfang, så skriv til os for et tilbud.
               </p>
             </div>
             <Link href="/kontakt" className="btn btn-primary sm:shrink-0">
-              Skriv til mig
+              Skriv til os
               <ArrowRight weight="bold" className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
@@ -145,14 +145,14 @@ export default function PricingPage() {
               <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
                 Sig endelig til senest 24 timer før din tid, hvis du
                 bliver nødt til at aflyse. Ved sent afbud eller
-                udeblivelse opkræver jeg et gebyr på 300 kr., da jeg
+                udeblivelse opkræver vi et gebyr på 300 kr., da vi
                 ellers ikke kan nå at give tiden videre til en anden.
               </p>
             </div>
             <div className="card p-6">
               <h2 className="font-display text-lg font-semibold text-[var(--color-ink)]">Kørsel</h2>
               <p className="mt-2 text-sm text-[var(--color-ink-soft)]">
-                Jeg tilbyder hjemmebesøg inden for ca. 45 minutters kørsel
+                Vi tilbyder hjemmebesøg inden for ca. 45 minutters kørsel
                 fra Fuglebjerg. De første 15 km er inkluderet i prisen.
                 Ved kørsel ud over 15 km opkræves et kørselstillæg på 4
                 kr. pr. kilometer.

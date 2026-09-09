@@ -7,7 +7,7 @@ import { business } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Kontakt - Sikker Havn Ergoterapi",
-  description: "Book en konsultation eller send en besked, så vender jeg tilbage hurtigst muligt.",
+  description: "Book en konsultation eller send en besked, så vender vi tilbage hurtigst muligt.",
 };
 
 const details = [
@@ -27,7 +27,7 @@ export default function ContactPage() {
               <h1 className="font-display text-4xl font-semibold text-[var(--color-ink)]">Kontakt</h1>
               <p className="mt-4 text-lg text-[var(--color-ink-soft)]">
                 Book en tid direkte i kalenderen nedenfor, eller send en
-                besked, så vender jeg tilbage hurtigst muligt.
+                besked, så vender vi tilbage hurtigst muligt.
               </p>
             </div>
             <Image
@@ -98,7 +98,7 @@ export default function ContactPage() {
           </h2>
           <p className="mt-2 max-w-xl text-[var(--color-ink-soft)]">
             Foretrækker du at skrive frem for at booke direkte? Brug
-            formularen, så vender jeg tilbage.
+            formularen, så vender vi tilbage.
           </p>
           <div className="card mt-6 max-w-xl p-7 sm:p-9">
             <ContactForm />

@@ -129,14 +129,14 @@ export default function ServicesPage() {
                 Dysfagi-konsulentydelse for virksomheder
               </h3>
               <p className="mt-2 max-w-xl text-sm text-[var(--color-ink-soft)]">
-                Jeg tager opgaver som privat konsulent inden for dysfagi
+                Vi tager opgaver som privat konsulent inden for dysfagi
                 (synkebesvær), med udredning, træning og undervisning
                 baseret på den nyeste evidens, til arbejdspladser på
-                Sjælland og Lolland. Det er noget af det, jeg brænder
+                Sjælland og Lolland. Det er noget af det, vi brænder
                 allermest for.
               </p>
               <Link href="/kontakt" className="btn btn-primary mt-5">
-                Skriv til mig
+                Skriv til os
                 <ArrowRight weight="bold" className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>

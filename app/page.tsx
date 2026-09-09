@@ -8,12 +8,12 @@ const teaserServices = [
   {
     image: "/illustrations/service-home-visit.svg",
     title: "Psykoedukation for forældre",
-    text: "I lærer om jeres barns neurodivergens og får konkrete redskaber til at støtte barnet i de problemer, I oplever i hverdagen. Vi finder ud af, hvad der faktisk virker for jer, ikke en generel opskrift.",
+    text: "I lærer om jeres barns ADHD/ADD og autisme og får konkrete redskaber til at støtte barnet i de problemer, I oplever i hverdagen. Vi finder ud af, hvad der faktisk virker for jer, ikke en generel opskrift.",
   },
   {
     image: "/illustrations/service-ergonomics.svg",
-    title: "Kend din egen neurodivergens",
-    text: "Et forløb hvor du lærer din egen autisme eller ADHD at kende, og hvordan den påvirker dine hverdagsaktiviteter. Jeg ved af egen erfaring, hvor stor en forskel den forståelse gør.",
+    title: "Kend din egen ADHD/ADD og autisme",
+    text: "Et forløb hvor du lærer din egen autisme eller ADHD at kende, og hvordan den påvirker dine hverdagsaktiviteter. Vi ved af egen erfaring, hvor stor en forskel den forståelse gør.",
   },
   {
     image: "/illustrations/service-rehab.svg",
@@ -25,13 +25,13 @@ const teaserServices = [
 const trust = [
   "Egen erfaring med autisme",
   "Evidensbaserede metoder",
-  "Virtuelt eller hjemme hos dig",
+  "Virtuelt eller på vores lokaler i Fuglebjerg og Næstved",
 ];
 
 const faq = [
   {
     question: "Skal jeg have en lægehenvisning?",
-    answer: "Nej, du kan booke en tid hos mig direkte, uden henvisning fra din læge.",
+    answer: "Nej, du kan booke en tid hos os direkte, uden henvisning fra din læge.",
   },
   {
     question: "Er det dækket af den offentlige sygesikring?",
@@ -39,29 +39,29 @@ const faq = [
       "Nej, ergoterapi er hverken omfattet af den offentlige sygesikring eller Sygeforsikringen Danmark. Enkelte private sundhedsforsikringer giver tilskud, så spørg endelig dit forsikringsselskab, inden du booker.",
   },
   {
-    question: "Foregår forløbene virtuelt eller hjemme hos mig?",
+    question: "Foregår forløbene virtuelt eller på jeres lokaler?",
     answer:
-      "Begge dele. Psykoedukation og samtaleterapi fungerer ofte fint virtuelt, og jeg kommer også gerne ud i hjemmet, hvis det giver mere mening for jer.",
+      "Begge dele. Psykoedukation og samtaleterapi fungerer ofte fint virtuelt, og I er også altid velkomne på vores lokaler i Fuglebjerg og Næstved, hvis det giver mere mening for jer.",
   },
   {
     question: "Hvornår kan jeg booke en tid?",
     answer:
-      "Fra september kan jeg bookes fredage til psykoedukation. Book gerne direkte i kalenderen her på siden, eller skriv til mig, hvis du er i tvivl om, hvad der passer bedst, jeg svarer så hurtigt jeg kan.",
+      "Fra september kan vi bookes fredage til psykoedukation. Book gerne direkte i kalenderen her på siden, eller skriv til os, hvis du er i tvivl om, hvad der passer bedst, vi svarer så hurtigt vi kan.",
   },
   {
     question: "Er det kun til børn?",
     answer:
-      "Nej. Jeg arbejder med børn, unge og voksne. Nogle kommer som forældre, der vil forstå og støtte deres barn bedre, andre kommer for at lære deres egen neurodivergens at kende, eller for at få redskaber til at mestre angst.",
+      "Nej. Vi arbejder med børn, unge og voksne. Nogle kommer som forældre, der vil forstå og støtte deres barn bedre, andre kommer for at lære deres egen ADHD/ADD og autisme at kende, eller for at få redskaber til at mestre angst.",
   },
   {
     question: "I har vist noget med dysfagi på arbejdspladser?",
     answer:
-      "Ja, jeg tager også opgaver som privat konsulent inden for dysfagi (synkebesvær) til arbejdspladser på Sjælland og Lolland, med udredning, træning og undervisning. Det er noget af det, jeg brænder allermest for, skriv endelig til mig.",
+      "Ja, vi tager også opgaver som privat konsulent inden for dysfagi (synkebesvær) til arbejdspladser på Sjælland og Lolland, med udredning, træning og undervisning. Det er noget af det, vi brænder allermest for, skriv endelig til os.",
   },
   {
     question: "Hvad hvis jeg bliver nødt til at aflyse?",
     answer:
-      "Så sig endelig til senest 24 timer før din tid. Ved sent afbud eller udeblivelse opkræver jeg et gebyr på 300 kr.",
+      "Så sig endelig til senest 24 timer før din tid. Ved sent afbud eller udeblivelse opkræver vi et gebyr på 300 kr.",
   },
 ];
 
@@ -78,11 +78,12 @@ export default function HomePage() {
               En sikker havn for dig og din familie
             </h1>
             <p className="mt-6 max-w-md text-lg text-[var(--color-ink-soft)]">
-              Jeg er ergoterapeut med en masse gode redskaber i kufferten.
+              Vi er ergoterapeut med en masse gode redskaber i kufferten.
               Sammen med min assistent Selina hjælper vi børn, unge og
-              voksne med neurodivergens, sanseforstyrrelser og
-              belastningsreaktioner, med fokus på psykoedukation og mestring,
-              virtuelt eller i dit eget hjem.
+              voksne med ADHD/ADD og autisme, sanseforstyrrelser og
+              belastningsreaktioner (depression, angst, stress), med fokus
+              på psykoedukation og mestring, virtuelt eller på vores
+              lokaler i Fuglebjerg og Næstved.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <BookingButton className="btn btn-primary btn-lg">
@@ -134,9 +135,10 @@ export default function HomePage() {
               Hjælp der møder dig, hvor du er
             </h2>
             <p className="mt-4 text-[var(--color-ink-soft)]">
-              Uanset om det handler om at forstå dit barns neurodivergens, din
-              egen, eller om at få redskaber til at mestre angst, tager jeg altid
-              udgangspunkt i lige præcis din situation.
+              Uanset om det handler om at forstå dit barns ADHD/ADD og
+              autisme, din egen, eller om at få redskaber til at mestre
+              angst, tager vi altid udgangspunkt i lige præcis din
+              situation.
             </p>
           </div>
 
@@ -227,7 +229,7 @@ export default function HomePage() {
           </h2>
           <p className="max-w-xl text-[var(--color-sage-light)]">
             Book en uforpligtende konsultation, så tager vi en snak om, hvor
-            du er, og hvordan jeg bedst kan hjælpe.
+            du er, og hvordan vi bedst kan hjælpe.
           </p>
           <BookingButton className="btn btn-on-dark btn-lg">
             Book en konsultation

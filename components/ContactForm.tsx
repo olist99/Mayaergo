@@ -49,7 +49,7 @@ export default function ContactForm() {
         <CheckCircle weight="duotone" className="h-10 w-10 text-[var(--color-sage-dark)]" aria-hidden="true" />
         <p className="font-display text-xl font-semibold text-[var(--color-ink)]">Tak for din besked!</p>
         <p className="text-sm text-[var(--color-ink-soft)]">
-          Jeg vender tilbage til dig hurtigst muligt, normalt inden for 1-2 hverdage.
+          Vi vender tilbage til dig hurtigst muligt, normalt inden for 1-2 hverdage.
         </p>
       </div>
     );

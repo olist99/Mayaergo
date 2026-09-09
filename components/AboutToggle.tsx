@@ -67,17 +67,19 @@ export default function AboutToggle({ mayaName, assistantName, autorisationsId }
                 Jeg hedder {mayaName}, og jeg er ergoterapeut med en masse
                 gode redskaber i kufferten. Sammen med min assistent{" "}
                 {assistantName} hjælper vi børn, unge og voksne med
-                neurodivergens, sanseforstyrrelser og belastningsreaktioner.
+                ADHD/ADD og autisme, sanseforstyrrelser og
+                belastningsreaktioner (depression, angst, stress).
               </p>
               <p>
                 Jeg fokuserer meget på psykoedukation og mestringsforløb,
-                både virtuelt og i dit eget hjem. Mine forløb går blandt
-                andet ud på, at forældre lærer om deres barns
-                neurodivergens og får værktøjer til at støtte barnet i de
-                problemer, der opleves. Derudover har jeg forløb, der
-                hjælper dig med at lære din egen neurodivergens at kende,
-                og forløb der giver dig redskaber til at mestre din angst,
-                ud fra evidensbaserede metoder.
+                både virtuelt og på vores lokaler i Fuglebjerg og
+                Næstved. Mine forløb går blandt andet ud på, at forældre
+                lærer om deres barns ADHD/ADD og autisme og får
+                værktøjer til at støtte barnet i de problemer, der
+                opleves. Derudover har jeg forløb, der hjælper dig med at
+                lære din egen ADHD/ADD og autisme at kende, og forløb der
+                giver dig redskaber til at mestre din angst, ud fra
+                evidensbaserede metoder.
               </p>
             </div>
 
@@ -116,7 +118,7 @@ export default function AboutToggle({ mayaName, assistantName, autorisationsId }
                 i mine hverdagsaktiviteter. Herfra opstod en passion for at
                 give noget, der mangler i systemet, og for at fange dem, der
                 ryger igennem nettet, samt at arbejde forebyggende, så børn
-                med neurodivergens vokser op psykisk stærke.
+                med ADHD/ADD og autisme vokser op psykisk stærke.
               </p>
             </div>
 
@@ -175,12 +177,14 @@ export default function AboutToggle({ mayaName, assistantName, autorisationsId }
                 udadreagerende borgere inden for demensområdet.
               </p>
               <p>
-                Jeg har selv kæmpet med belastningsreaktioner, og uden
+                Jeg har selv kæmpet med belastningsreaktioner (depression,
+                angst, stress), og uden
                 diagnoser har jeg oplevet flere problematikker inden for
                 autismespektret.
               </p>
               <p>
-                Jeg har haft belastningsreaktioner tæt på mig i mine
+                Jeg har haft belastningsreaktioner (depression, angst,
+                stress) tæt på mig i mine
                 relationer hele livet og har meget livserfaring med dette.
                 Jeg glæder mig til snart at kunne koble det sammen med
                 uddannelse og faglighed, så jeg med høj faglighed og

@@ -27,14 +27,14 @@ const siteUrl = `https://${business.domain}`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sikker Havn Ergoterapi - Autisme, sanseforstyrrelser og belastningsreaktioner",
+    default: "Sikker Havn Ergoterapi - ADHD/ADD, autisme, sanseforstyrrelser og belastningsreaktioner (depression, angst, stress)",
     template: "%s - Sikker Havn Ergoterapi",
   },
   description:
-    "Ergoterapeutisk hjælp til børn, unge og voksne med neurodivergens, sanseforstyrrelser og belastningsreaktioner. Psykoedukation, mestringsforløb og samtaleterapi.",
+    "Ergoterapeutisk hjælp til børn, unge og voksne med ADHD/ADD og autisme, sanseforstyrrelser og belastningsreaktioner (depression, angst, stress). Psykoedukation, mestringsforløb og samtaleterapi.",
   openGraph: {
     title: "Sikker Havn Ergoterapi",
-    description: "Autisme, sanseforstyrrelser, belastningsreaktioner, psykoedukation og samtaleterapi.",
+    description: "ADHD/ADD, autisme, sanseforstyrrelser, belastningsreaktioner (depression, angst, stress), psykoedukation og samtaleterapi.",
     url: siteUrl,
     siteName: business.practiceName,
     locale: "da_DK",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Sikker Havn Ergoterapi",
-    description: "Autisme, sanseforstyrrelser, belastningsreaktioner, psykoedukation og samtaleterapi.",
+    description: "ADHD/ADD, autisme, sanseforstyrrelser, belastningsreaktioner (depression, angst, stress), psykoedukation og samtaleterapi.",
   },
 };
 
@@ -56,7 +56,7 @@ const localBusinessJsonLd = {
   "@type": "MedicalBusiness",
   name: business.practiceName,
   description:
-    "Ergoterapeutisk praksis med fokus på neurodivergens, sanseforstyrrelser, belastningsreaktioner, psykoedukation og samtaleterapi.",
+    "Ergoterapeutisk praksis med fokus på ADHD/ADD og autisme, sanseforstyrrelser, belastningsreaktioner (depression, angst, stress), psykoedukation og samtaleterapi.",
   url: siteUrl,
   telephone: business.phoneHref.replace("tel:", ""),
   email: business.email,
